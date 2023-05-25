@@ -18,3 +18,23 @@ function myFunc() {
 
 myFunc()
 console.log(x);
+
+// if a variable is declared inside {}, it should not be seen outside.
+{
+  let message = "hello";
+  console.log(message);
+}
+
+{
+  let message = "Goodbye";
+  console.log(message);
+}
+
+for (let i=0; i<3; i++) {
+  console.log(i);
+}
+
+while (true) {
+  let phrase = '¡Hola!';
+  console.log(phrase);
+}
